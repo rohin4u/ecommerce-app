@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Purse illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f8f1e7"/>
+      <stop offset="100%" stop-color="#efe1d5"/>
+    </linearGradient>
+    <linearGradient id="bag" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d9a66d"/>
+      <stop offset="100%" stop-color="#c58742"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <g transform="translate(0 10)">
+    <path d="M100 140 L300 140 C318 140 332 154 332 172 L318 310 C318 328 304 342 286 342 L114 342 C96 342 82 328 82 310 L68 172 C68 154 82 140 100 140 Z" fill="url(#bag)" stroke="#9b6632" stroke-width="6"/>
+    <path d="M100 140 L300 140 L268 170 L132 170 Z" fill="#c88d4a" stroke="#9b6632" stroke-width="6"/>
+    <ellipse cx="200" cy="220" rx="38" ry="28" fill="#f7f1e8" stroke="#c48743" stroke-width="5"/>
+    <path d="M165 145 C165 110 175 80 200 68 C225 80 235 110 235 145" fill="none" stroke="#9b6632" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="200" cy="220" r="10" fill="#d9a66d" stroke="#9b6632" stroke-width="4"/>
+  </g>
+</svg>

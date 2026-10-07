@@ -1,0 +1,169 @@
+.detail-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 5%;
+  background: #eef1f4;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.brand-link,
+.back-link {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.brand-link {
+  font-size: 1.5rem;
+  color: #101827;
+}
+
+.back-link {
+  color: #1d4ed8;
+  font-size: 0.98rem;
+}
+
+.product-detail-page {
+  min-height: calc(100vh - 72px);
+  padding: 40px 8% 72px;
+  background: #f4f7fb;
+}
+
+.product-detail-card {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 32px;
+  background: white;
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-main-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #eff6ff, #e0e7ff);
+  font-size: clamp(7rem, 12vw, 12rem);
+}
+
+.product-thumbnail-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.product-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 110px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  font-size: 3rem;
+}
+
+.product-detail-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detail-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.product-detail-text h1 {
+  margin: 0 0 14px;
+  color: #0f172a;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+}
+
+.detail-price {
+  color: #2563eb;
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
+  font-weight: 800;
+  margin: 0 0 16px;
+}
+
+.detail-description {
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0 0 22px;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.primary-button,
+.secondary-button {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-button {
+  background: #111827;
+  color: white;
+}
+
+.secondary-button {
+  background: #eef2ff;
+  color: #1e3a8a;
+}
+
+.detail-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+  color: #334155;
+}
+
+.detail-features li::before {
+  content: '✓';
+  color: #16a34a;
+  font-weight: 800;
+  margin-right: 8px;
+}
+
+@media (max-width: 700px) {
+  .product-detail-card {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .product-main-image {
+    min-height: 260px;
+  }
+
+  .detail-actions {
+    flex-direction: column;
+  }
+}
